@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+body {
+    background-color: white;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.montserrat {
+    font-family: Montserrat;
+}
