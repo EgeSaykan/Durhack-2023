@@ -1,17 +1,42 @@
 @charset "UTF-8";
 
+<<<<<<< HEAD
+.page-1 {
+    background-color: #bbd2f9;
+    height: 100vh;
+=======
 body {
   background-color: white;
+>>>>>>> 02ceda3ef51ecbc1bea12f606b5c8abf82c8a18d
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
 
+.navbar-height {
+    height: 55px;
+}
+
+.extend {
+    height: calc(100vh - 55px);
+}
+
 .montserrat {
   font-family: Montserrat;
 }
 
+<<<<<<< HEAD
+#exante {
+    width: 155px;
+    margin-left: 5vw;
+}
+
+#myprotein {
+    width: 155px;
+    margin-left: 0vw;
+    margin-top: 50vh;
+=======
 
 #content-container {
     min-height: 2000px; /* Set a minimum height */
@@ -26,4 +51,5 @@ body::-webkit-scrollbar {
 
 #rocket{
     position: relative;
+>>>>>>> 02ceda3ef51ecbc1bea12f606b5c8abf82c8a18d
 }
