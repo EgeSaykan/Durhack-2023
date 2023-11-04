@@ -74,15 +74,23 @@ body::-webkit-scrollbar {
 }
 
 #image-container {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-#rocket{
-    position: relative;
+#rocket {
+  position: relative;
 }
+
+#flames {
+  position: absolute;
+  top: 100%; /* Place flames below the rocket */
+  left: 70px; /* Adjust left position as needed */
+}
+
+
 body::-webkit-scrollbar {
     z-index: 18;
     border-radius: 100%;

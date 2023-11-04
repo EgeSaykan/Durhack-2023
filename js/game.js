@@ -1,4 +1,5 @@
 const rocket = document.getElementById('rocket');
+const flames = document.getElementById('flames')
 const container = document.getElementById('image-container');
 const rocketWidth = rocket.offsetWidth;
 
@@ -11,6 +12,7 @@ const friction = 0.08;
 // Function to update the rocket's position
 function updateRocketPosition() {
   rocket.style.left = rocketLeft + 'px';
+  flames.style.left = rocketLeft + 70 + 'px';
 }
 
 // Scoring
