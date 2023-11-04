@@ -49,6 +49,26 @@ body::-webkit-scrollbar {
     margin-left: 12vw;
 }
 
+#glossy-box {
+    width: 155px;
+    margin-left: 1vw;
+}
+
+#espa {
+    width: 155px;
+    margin-left: 5vw;
+}
+
+#lookfantastic {
+    width: 155px;
+    margin-left: 7vw;
+}
+
+#matalan {
+    width: 155px;
+    margin-left: 12vw;
+}
+
 #content-container {
     min-height: 2000px; /* Set a minimum height */
 }
