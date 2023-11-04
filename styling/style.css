@@ -1,39 +1,47 @@
 @charset "UTF-8";
 
-.page-1 {
+#page-1 {
     background-color: #bbd2f9;
     height: 100vh;
 }
 
-body {
-  background-color: white;
+#page-2 {
+    display: none;
 }
 
+ 
 body::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .navbar-height {
-    height: 55px;
+  height: 55px;
 }
 
 .extend {
-    height: calc(100vh - 55px);
+  height: calc(100vh - 55px);
 }
 
 .montserrat {
-  font-family: Montserrat;
+    font-family: Montserrat;
+}
+
+#rocket-ship {
+    margin-top: 15vh;
+}
+
+.companies {
+    padding: 1px;
 }
 
 #exante {
-    width: 155px;
-    margin-left: 5vw;
+  width: 155px;
+  margin-left: 1vw;
 }
 
 #myprotein {
     width: 155px;
-    margin-left: 0vw;
-    margin-top: 50vh;
+    margin-left: 12vw;
 }
 
 #content-container {
@@ -50,3 +58,38 @@ body::-webkit-scrollbar {
 #rocket{
     position: relative;
 }
+body::-webkit-scrollbar {
+    z-index: 18;
+    border-radius: 100%;
+}
+
+/* Star generation code */
+#content-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #000;
+    z-index: -1;
+  
+}
+
+
+#stars-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Position the stars container behind the content */
+  }
+  .stars {
+    position: absolute;
+    background: #f1f1f1;
+    z-index: 18;
+    border-radius: 100%;
+  }
+    
+  .rerun {
+    position: absolute;
+    bottom: 5%;
+  }
