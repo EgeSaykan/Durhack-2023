@@ -24,6 +24,6 @@ body::-webkit-scrollbar {
     transform: translateX(-50%);
 }
 
-#rocket {
-  position: relative;
+#rocket{
+    position: relative;
 }
