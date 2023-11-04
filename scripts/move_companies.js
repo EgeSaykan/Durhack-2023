@@ -6,7 +6,9 @@ let glossy = [Date.now() + Math.random() * 20000];
 let espa = [Date.now() - Math.random() * 20000];
 let lookfantastic = [Date.now() + Math.random() * 20000];
 let matalan = [Date.now() + Math.random() * 20000];
-let homebase = [Date.now() + Math.random() * 20000];
+let homebase = [Date.now() - Math.random() * 20000];
+let cola = [Date.now() - Math.random() * 20000];
+let hale = [Date.now() + Math.random() * 20000];
 
 
 function move_companies(id, scale, time){
@@ -16,7 +18,8 @@ function move_companies(id, scale, time){
   if (parseInt(a.slice(0, a.length - 2)) >= window.innerHeight) {
     time[0] = Date.now() + Math.random() * 20000
   }
-// testing if I can commit hello
+
+
 }
 
 setInterval(move_companies, 5, "exante", 25, exante_time)
@@ -27,3 +30,5 @@ setInterval(move_companies, 5, "espa", 45, espa)
 setInterval(move_companies, 5, "lookfantastic", 22, lookfantastic)
 setInterval(move_companies, 5, "matalan", 30, matalan)
 setInterval(move_companies, 5, "homebase", 25, homebase)
+setInterval(move_companies, 5, "cola", 35, cola)
+setInterval(move_companies, 5, "hale", 20, hale)
