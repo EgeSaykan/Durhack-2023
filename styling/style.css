@@ -124,9 +124,8 @@ body::-webkit-scrollbar {
     background: #f1f1f1;
     z-index: 1;
     border-radius: 100%;
-    /* Add twinkling animation for stars */
-    animation: twinkling 5s infinite, moveDown 20s linear infinite;
-    /* Adjust the duration and timing as needed */
+    /* Add twinkling animation for stars and set iteration count to infinite */
+    animation: twinkling 5s infinite, moveDown 20s linear 1; /* Adjust the duration and timing as needed */
 }
 
 .meteors {
@@ -134,19 +133,18 @@ body::-webkit-scrollbar {
     width: 20px;
     height: 20px;
     z-index: 1;
-    background: rgba(152, 43, 29, 0.695);
-    /* Color of the meteors */
-    /* Add fall animation for meteors */
-    animation: fall 1s linear infinite;
-    /* You can adjust this separately */
+    background: rgba(152, 43, 29, 0.695); /* Color of the meteors */
+    /* Add fall animation for meteors and set iteration count to infinite */
+    animation: fall 5s linear infinite;
 }
 
 @keyframes twinkling {
     0% {
         opacity: 1;
-
     }
-
+    50% {
+        opacity: 0.5;
+    }
     100% {
         opacity: 1;
     }
@@ -156,10 +154,11 @@ body::-webkit-scrollbar {
     0% {
         transform: translateY(0);
     }
-
     80% {
-        transform: translateY(10000%);
-        /* Extend the movement path by increasing the percentage */
+        transform: translateY(10000%); /* Extend the movement path by increasing the percentage */
+    }
+    100% {
+        transform: translateY(0); /* Reset stars to the top */
     }
 }
 
@@ -167,10 +166,8 @@ body::-webkit-scrollbar {
     0% {
         transform: translate(75%, -10%);
     }
-
-    80% {
-        transform: translate(100%, 110%);
-        /* Adjust this value to control meteor's path */
+    100% {
+        transform: translate(75%, 110%); /* Adjust this value to control meteor's path */
     }
 }
 
