@@ -59,7 +59,7 @@ body::-webkit-scrollbar {
 
 #espa {
     width: 155px;
-    margin-left: 9vw;
+    margin-left: 15vw;
 }
 
 #lookfantastic {
@@ -85,6 +85,11 @@ body::-webkit-scrollbar {
 #hale {
     width: 155px;
     margin-left: 25vw;
+}
+
+#hut {
+    width: 155px;
+    margin-left: 30vw;
 }
 
 #content-container {
