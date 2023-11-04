@@ -9,6 +9,7 @@ let matalan = [Date.now() + Math.random() * 20000];
 let homebase = [Date.now() - Math.random() * 20000];
 let cola = [Date.now() - Math.random() * 20000];
 let hale = [Date.now() + Math.random() * 20000];
+let hut = [Date.now() - Math.random() * 20000];
 
 
 function move_companies(id, scale, time){
@@ -32,3 +33,4 @@ setInterval(move_companies, 5, "matalan", 30, matalan)
 setInterval(move_companies, 5, "homebase", 25, homebase)
 setInterval(move_companies, 5, "cola", 35, cola)
 setInterval(move_companies, 5, "hale", 20, hale)
+setInterval(move_companies, 5, "hut", 40, hut)
