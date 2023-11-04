@@ -31,18 +31,17 @@ body::-webkit-scrollbar {
 }
 
 .companies {
-    position: relative;
+    padding: 1px;
 }
 
 #exante {
   width: 155px;
-  margin-left: 5vw;
-  margin-top: 0px;
+  margin-left: 1vw;
 }
 
 #myprotein {
     width: 155px;
-    margin-left: 0vw;
+    margin-left: 12vw;
 }
 
 #content-container {
