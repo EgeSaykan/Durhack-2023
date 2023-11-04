@@ -110,30 +110,30 @@ body::-webkit-scrollbar {
     /* Set a minimum height */
 }
 
-#image-container {
+#image-container, #image-container-static {
     position: absolute;
-    bottom: 25%;
-    left: 50%;
+    bottom: 10%;
+    left: 48%;
     transform: translate(-50%, -50%);
 }
 
-#rocket {
+#rocket, #rocket-static {
     position: relative;
 }
 
-#flames {
+#flames, #flames-static {
     position: absolute;
     top: 100%;
     /* Place flames below the rocket */
-    left: 70px;
+    left: 80px;
     /* Adjust left position as needed */
 }
 
-#flames-blur {
+#flames-blur, #flames-blur-static {
     position: absolute;
     top: 100%;
     /* Place flames below the rocket */
-    left: 45px;
+    left: 55px;
     /* Adjust left position as needed */
 }
 
