@@ -31,17 +31,17 @@
     display: none;
 }
 
- 
+
 body::-webkit-scrollbar {
     display: none;
 }
 
 .navbar-height {
-  height: 55px;
+    height: 55px;
 }
 
 .extend {
-  height: calc(100vh - 55px);
+    height: calc(100vh - 55px);
 }
 
 .montserrat {
@@ -49,7 +49,8 @@ body::-webkit-scrollbar {
 }
 
 #rocket-ship {
-    margin-top: 15vh;
+    margin-top: 25vh;
+    width: 15vw;
 }
 
 .companies {
@@ -57,65 +58,79 @@ body::-webkit-scrollbar {
 }
 
 #exante {
-  width: 155px;
   margin-left: 5vw;
-  margin-top: 0px;
 }
 
 #myprotein {
-    width: 155px;
     margin-left: 0vw;
 }
 
 #selfish {
-    width: 155px;
-    margin-left: 12vw;
+    margin-left: 19vw;
 }
 
 #glossy-box {
-    width: 155px;
     margin-left: 1vw;
 }
 
 #espa {
-    width: 155px;
-    margin-left: 5vw;
+    margin-left: 15vw;
 }
 
 #lookfantastic {
-    width: 155px;
-    margin-left: 7vw;
+    margin-left: 17vw;
 }
 
 #matalan {
-    width: 155px;
     margin-left: 12vw;
 }
 
 #homebase {
-    width: 155px;
     margin-left: 0vw;
 }
 
+#cola {
+    margin-left: 15vw;
+}
+
+#hale {
+    margin-left: 25vw;
+}
+
+#hut {
+    margin-left: 30vw;
+}
+
 #content-container {
-    min-height: 2000px; /* Set a minimum height */
+    min-height: 2000px;
+    /* Set a minimum height */
 }
 
 #image-container {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #rocket {
-  position: relative;
+    position: relative;
 }
 
 #flames {
-  position: absolute;
-  top: 100%; /* Place flames below the rocket */
-  left: 70px; /* Adjust left position as needed */
+    position: absolute;
+    top: 100%;
+    /* Place flames below the rocket */
+    left: 70px;
+    /* Adjust left position as needed */
+}
+
+#flames-blur {
+    position: absolute;
+    top: 100%;
+    /* Place flames below the rocket */
+    left: 45px;
+    /* Adjust left position as needed */
 }
 
 
@@ -130,8 +145,8 @@ body::-webkit-scrollbar {
     background: #f1f1f1;
     z-index: 1;
     border-radius: 100%;
-    /* Add twinkling animation for stars */
-    animation: twinkling 5s infinite, moveDown 20s linear infinite; /* Adjust the duration and timing as needed */
+    /* Add twinkling animation for stars and set iteration count to infinite */
+    animation: twinkling 5s infinite, moveDown 20s linear 1; /* Adjust the duration and timing as needed */
 }
 
 .meteors {
@@ -140,14 +155,16 @@ body::-webkit-scrollbar {
     height: 20px;
     z-index: 1;
     background: rgba(152, 43, 29, 0.695); /* Color of the meteors */
-    /* Add fall animation for meteors */
-    animation: fall 1s linear infinite; /* You can adjust this separately */
+    /* Add fall animation for meteors and set iteration count to infinite */
+    animation: fall 5s linear infinite;
 }
 
 @keyframes twinkling {
     0% {
         opacity: 1;
-    
+    }
+    50% {
+        opacity: 0.5;
     }
     100% {
         opacity: 1;
@@ -161,14 +178,17 @@ body::-webkit-scrollbar {
     80% {
         transform: translateY(10000%); /* Extend the movement path by increasing the percentage */
     }
+    100% {
+        transform: translateY(0); /* Reset stars to the top */
+    }
 }
 
 @keyframes fall {
     0% {
         transform: translate(75%, -10%);
     }
-    80% {
-        transform: translate(100%, 110%); /* Adjust this value to control meteor's path */
+    100% {
+        transform: translate(75%, 110%); /* Adjust this value to control meteor's path */
     }
 }
 
