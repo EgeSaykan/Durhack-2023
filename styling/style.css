@@ -117,6 +117,15 @@ body::-webkit-scrollbar {
     transform: translate(-50%, -50%);
 }
 
+#image-box-static{
+    z-index: 12;
+    position: absolute;
+    bottom: 10%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+
+}
+
 #rocket, #rocket-static {
     position: relative;
 }
@@ -125,18 +134,39 @@ body::-webkit-scrollbar {
     position: absolute;
     top: 100%;
     /* Place flames below the rocket */
-    left: 80px;
+   
+}
+#flames-blur-static{
+    left: 55px;
     /* Adjust left position as needed */
+}
+#flames-static{
+        /* Place flames below the rocket */
+    left: 85px;
 }
 
 #flames-blur, #flames-blur-static {
     position: absolute;
     top: 100%;
-    /* Place flames below the rocket */
-    left: 55px;
     /* Adjust left position as needed */
 }
 
+#rocket{
+    width: 50px; /* Set the desired width for the rocket */
+    height: 50px; /* Set the desired height for the rocket */
+}
+
+#flames{
+    left: 10px;
+    width: 30px; /* Set the desired width for the rocket */
+    height: 30px; /* Set the desired height for the rocket */
+}
+
+#flames-blur{
+    left: 10px;
+    width: 30px; /* Set the desired width for the rocket */
+    height: 30px; /* Set the desired height for the rocket */
+}
 
 body::-webkit-scrollbar {
     z-index: 18;
