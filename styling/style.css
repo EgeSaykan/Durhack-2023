@@ -27,6 +27,11 @@ body::-webkit-scrollbar {
     font-family: Montserrat;
 }
 
+#rocket-ship {
+    margin-top: 25vh;
+    width: 15vw;
+}
+
 .companies {
     position: relative;
 }
@@ -44,7 +49,7 @@ body::-webkit-scrollbar {
 
 #selfish {
     width: 155px;
-    margin-left: 12vw;
+    margin-left: 19vw;
 }
 
 #glossy-box {
@@ -54,12 +59,12 @@ body::-webkit-scrollbar {
 
 #espa {
     width: 155px;
-    margin-left: 5vw;
+    margin-left: 9vw;
 }
 
 #lookfantastic {
     width: 155px;
-    margin-left: 7vw;
+    margin-left: 17vw;
 }
 
 #matalan {
@@ -70,6 +75,16 @@ body::-webkit-scrollbar {
 #homebase {
     width: 155px;
     margin-left: 0vw;
+}
+
+#cola {
+    width: 155px;
+    margin-left: 15vw;
+}
+
+#hale {
+    width: 155px;
+    margin-left: 25vw;
 }
 
 #content-container {
