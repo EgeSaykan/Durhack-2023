@@ -1,17 +1,12 @@
 @charset "UTF-8";
 
-<<<<<<< HEAD
-.page-1 {
+#page-1 {
     background-color: #bbd2f9;
     height: 100vh;
-=======
-body {
-  background-color: white;
->>>>>>> 02ceda3ef51ecbc1bea12f606b5c8abf82c8a18d
 }
 
 body::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .navbar-height {
@@ -23,10 +18,9 @@ body::-webkit-scrollbar {
 }
 
 .montserrat {
-  font-family: Montserrat;
+    font-family: Montserrat;
 }
 
-<<<<<<< HEAD
 #exante {
     width: 155px;
     margin-left: 5vw;
@@ -36,20 +30,9 @@ body::-webkit-scrollbar {
     width: 155px;
     margin-left: 0vw;
     margin-top: 50vh;
-=======
-
-#content-container {
-    min-height: 2000px; /* Set a minimum height */
 }
 
-#image-container {
-    position: fixed;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#rocket{
-    position: relative;
->>>>>>> 02ceda3ef51ecbc1bea12f606b5c8abf82c8a18d
+#rocket-ship {
+    margin-top: 15vh;
+    width: 18vw;
 }
