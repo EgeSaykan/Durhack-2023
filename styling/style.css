@@ -4,6 +4,27 @@
     background-color: #bbd2f9;
     height: 100vh;
 }
+.centered {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 70px;
+    margin: 50px;
+    text-align: center;
+    
+  }
+
+.start{
+    color:purple;
+    font-weight: bold;
+    position: realtive;
+    padding: 1em 0;
+    margin: 0;
+    text-shadow: 1px 1px 0px violet; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+
+}
 
 #page-2 {
     background-color: black;
