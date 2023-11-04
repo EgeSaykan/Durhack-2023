@@ -11,9 +11,52 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <style>
+      #image-container {
+          position: relative;
+      }
+      #rocket {
+          position: absolute;
+          top: 0;
+          left: 50%;
+      }
+  </style>
     <script src="scripts/move_companies.js"></script>
 
 </head>
+<body>
+    <div id="image-container">
+        <img id="rocket" src="images/rocket-ship.svg" alt="Rocket Image">
+    </div>
+
+    <script>
+        const rocket = document.getElementById('rocket');
+        console.log("Start")
+
+        // Set the initial position of the rocket
+        let rocketLeft = 0;
+
+        // Function to update the rocket's position
+        function updateRocketPosition() {
+            rocket.style.left = rocketLeft + 'px';
+        }
+
+        // Event listener to capture arrow key presses
+        window.addEventListener('keydown', (event) => {
+            switch (event.key) {
+                case 'ArrowLeft':
+                    rocketLeft -= 10;
+                    break;
+                case 'ArrowRight':
+                    rocketLeft += 10;
+                    break;
+            }
+
+            // Update the rocket's position
+            updateRocketPosition();
+        });
+    </script>
+</body>
     <body>
     
 
