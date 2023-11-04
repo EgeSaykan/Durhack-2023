@@ -23,3 +23,7 @@ body::-webkit-scrollbar {
     left: 50%;
     transform: translateX(-50%);
 }
+
+#rocket {
+  position: relative;
+}
