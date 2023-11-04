@@ -22,19 +22,22 @@
     requestAnimationFrame(updateRocket);
   }
 
-        window.addEventListener("keydown", (event) => {
-            switch (event.key) {
-                case "ArrowLeft":
-                    rocketLeft -= 10;
-                    break;
-                case "ArrowRight":
-                    rocketLeft += 10;
-                    break;
-            }
+  // Event listener to capture arrow key presses
+  window.addEventListener('keydown', (event) => {
+    switch (event.key) {
+      case 'ArrowLeft':
+        rocketVelocity -= acceleration;
+        break;
+      case 'ArrowRight':
+        rocketVelocity += acceleration;
+        break;
+    }
+  });
 
-            updateRocketPosition();
-        });
+  window.addEventListener('keyup', () => {
+    // Apply friction when no arrow keys are pressed
+    rocketVelocity *= 1 - friction;
+  });
 
-        // To center the rocket initially:
-        rocketLeft = (window.innerWidth - rocket.width) / 2;
-        updateRocketPosition();
+  // Start the animation loop
+  updateRocket();
