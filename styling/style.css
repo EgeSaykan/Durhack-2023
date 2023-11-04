@@ -44,6 +44,11 @@ body::-webkit-scrollbar {
     margin-left: 12vw;
 }
 
+#selfish {
+    width: 155px;
+    margin-left: 12vw;
+}
+
 #content-container {
     min-height: 2000px; /* Set a minimum height */
 }
