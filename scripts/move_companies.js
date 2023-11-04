@@ -16,7 +16,7 @@ function move_companies(id, scale, time){
   if (parseInt(a.slice(0, a.length - 2)) >= window.innerHeight) {
     time[0] = Date.now() + Math.random() * 20000
   }
-
+// testing if I can commit hello
 }
 
 setInterval(move_companies, 5, "exante", 25, exante_time)
