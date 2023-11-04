@@ -1,13 +1,25 @@
 @charset "UTF-8";
 
 body {
-    background-color: white;
+  background-color: white;
 }
 
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .montserrat {
-    font-family: Montserrat;
+  font-family: Montserrat;
+}
+
+
+#content-container {
+    min-height: 2000px; /* Set a minimum height */
+}
+
+#image-container {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }

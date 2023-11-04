@@ -19,27 +19,19 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
-    <style>
-      #image-container {
-        position: relative;
-      }
-      #rocket {
-        position: absolute;
-        top: 0;
-        left: 50%;
-      }
-    </style>
   </head>
-  <body>
-    <div id="image-container">
-      <img id="rocket" src="images/rocket-ship.svg" alt="Rocket Image" />
+  <body onLoad="pageScroll()">
+    <div id="content-container">
+      <!-- Initial content -->
+      <p>Content 1</p>
+      <p>Content 2</p>
+      <p>Content 3</p>
+      <div id="image-container">
+        <img id="rocket" src="images/rocket-ship.svg" alt="Rocket Image" />
+      </div>
     </div>
   </body>
   <footer>
-    <!-- ScrollMagic.io JS-->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-
     <!-- Bootstrap JS -->
 
     <script
@@ -60,5 +52,6 @@
 
     <!-- Custom JS-->
     <script src="js/game.js"></script>
+    <script src="js/gamescroll.js"></script>
   </footer>
 </html>

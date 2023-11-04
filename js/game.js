@@ -1,25 +1,23 @@
 const rocket = document.getElementById("rocket");
-console.log("Start");
+        let rocketLeft = 0;
 
-// Set the initial position of the rocket
-let rocketLeft = 0;
+        function updateRocketPosition() {
+            rocket.style.left = rocketLeft + "px";
+        }
 
-// Function to update the rocket's position
-function updateRocketPosition() {
-  rocket.style.left = rocketLeft + "px";
-}
+        window.addEventListener("keydown", (event) => {
+            switch (event.key) {
+                case "ArrowLeft":
+                    rocketLeft -= 10;
+                    break;
+                case "ArrowRight":
+                    rocketLeft += 10;
+                    break;
+            }
 
-// Event listener to capture arrow key presses
-window.addEventListener("keydown", (event) => {
-  switch (event.key) {
-    case "ArrowLeft":
-      rocketLeft -= 10;
-      break;
-    case "ArrowRight":
-      rocketLeft += 10;
-      break;
-  }
+            updateRocketPosition();
+        });
 
-  // Update the rocket's position
-  updateRocketPosition();
-});
+        // To center the rocket initially:
+        rocketLeft = (window.innerWidth - rocket.width) / 2;
+        updateRocketPosition();
