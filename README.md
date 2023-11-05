@@ -1,7 +1,7 @@
 # Durhack-2023
 
 Durhack is a hackathon arranged by Durham University students.
-We have contributed with a [challenge set by THG](https://docs.google.com/presentation/d/1h96oRNInMThY9VOZ74VkIUjo-wmrRlbF/edit#slide=id.p1).
+We worked towards a [challenge set by THG](https://docs.google.com/presentation/d/1h96oRNInMThY9VOZ74VkIUjo-wmrRlbF/edit#slide=id.p1).
 
 
 ## Contributors
