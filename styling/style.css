@@ -157,15 +157,15 @@ body::-webkit-scrollbar {
 }
 
 #flames{
-    left: 10px;
-    width: 30px; /* Set the desired width for the rocket */
-    height: 30px; /* Set the desired height for the rocket */
+    left: 15px;
+    width: 20px; /* Set the desired width for the rocket */
+    height: 20px; /* Set the desired height for the rocket */
 }
 
 #flames-blur{
-    left: 10px;
-    width: 30px; /* Set the desired width for the rocket */
-    height: 30px; /* Set the desired height for the rocket */
+    left: 15px;
+    width: 20px; /* Set the desired width for the rocket */
+    height: 20px; /* Set the desired height for the rocket */
 }
 
 body::-webkit-scrollbar {
