@@ -58,38 +58,3 @@ window.addEventListener('keyup', (event) => {
 
 // Start the animation loop
 updateRocket();
-
-//Collision logic
-
-function areMeteorsCollidingWithObject(meteors, object) {
-  const objectRect = object.getBoundingClientRect();
-
-  for (const meteor of meteors) {
-    const meteorRect = meteor.getBoundingClientRect();
-
-    if (
-      objectRect.left < meteorRect.right &&
-      objectRect.right > meteorRect.left &&
-      objectRect.top < meteorRect.bottom &&
-      objectRect.bottom > meteorRect.top
-    ) {
-      // Collision detected
-      return true;
-    }
-  }
-
-  // No collision detected
-  return false;
-}
-
-
-const meteors = Array.from(document.getElementsByClassName("meteors"));
-const ship = document.getElementById("rocket");
-
-setInterval(function () {
-  if (areMeteorsCollidingWithObject(meteors, ship)) {
-    console.log("Meteor collided with the ship");
-  } else {
-    console.log("No collision detected");
-  }
-}, 100); // Check for collisions every 100 milliseconds (adjust the interval as needed)

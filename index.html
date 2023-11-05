@@ -34,9 +34,13 @@ function lockPage() {
 </head>
     <body onload="lockPage()">
         
-
+        <div id="background-container">
+            <!-- Your background content goes here -->
+        </div>
+        <div id="stars-container">
+            <!-- Stars will be generated here -->
+        </div>
         <div id="page-1" class="container-fluid">
-            <div id="stars-container"></div>
             
             <div class="row extend">
                 
@@ -66,7 +70,7 @@ function lockPage() {
                     
                 </div>
 
-                <div class="col-md-2 text-center" id="image-box-static" onclick="setInterval(setTime, 1000); return show('page-2','page-1');">
+                <div class="col-md-2 text-center" id="image-box-static" onclick="return show('page-2','page-1');">
                     <img id="rocket-static" src="images/rocket-ship.svg" alt="rocket-ship" />
                     <img id="flames-blur-static" src="images/flames-blur.svg" alt="Flames-blur Image" />
                     <img id="flames-static" src="images/flames.svg" alt="Flames Image" />
