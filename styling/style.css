@@ -187,16 +187,6 @@ body::-webkit-scrollbar {
     animation: twinkling 5s infinite, moveDown 20s linear 1; /* Adjust the duration and timing as needed */
 }
 
-.meteors {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    z-index: 1;
-    background: rgba(152, 43, 29, 0.695); /* Color of the meteors */
-    /* Add fall animation for meteors and set iteration count to infinite */
-    animation: fall 5s linear infinite;
-}
-
 @keyframes twinkling {
     0% {
         opacity: 1;
@@ -221,16 +211,7 @@ body::-webkit-scrollbar {
     }
 }
 
-@keyframes fall {
-    0% {
-        transform: translate(75%, -10%);
-    }
-    100% {
-        transform: translate(75%, 110%); /* Adjust this value to control meteor's path */
-    }
-}
-
-#stars-container, #stars-container-game {
+#stars-container {
     position: absolute;
     top: 0;
     left: 0;

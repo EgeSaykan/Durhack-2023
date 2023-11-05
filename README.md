@@ -6,10 +6,10 @@ We have contributed with a [challange set by THG](https://docs.google.com/presen
 
 ## Contributors
 
-Ishak Ege Saykan
-William Morgan
-John Hadden
-Ben Magowan
+- Ishak Ege Saykan
+- William Morgan
+- John Hadden
+- Ben Magowan
 
 
 ## Contributing
