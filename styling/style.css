@@ -109,6 +109,46 @@ body::-webkit-scrollbar {
     margin-left: 30vw;
 }
 
+#exante-page-2 {
+  margin-left: 0vw;
+}
+
+#selfish-page-2 {
+    margin-left: 20vw;
+}
+
+#glossy-box-page-2 {
+    margin-left: 30vw;
+}
+
+#espa-page-2 {
+    margin-left: 40vw;
+}
+
+#lookfantastic-page-2 {
+    margin-left: 100vw;
+}
+
+#matalan-page-2 {
+    margin-left: 10vw;
+}
+
+#homebase-page-2 {
+    margin-left: 80vw;
+}
+
+#cola-page-2 {
+    margin-left: 70vw;
+}
+
+#hale-page-2 {
+    margin-left: 60vw;
+}
+
+#hut-page-2 {
+    margin-left: 50vw;
+}
+
 #content-container {
     min-height: 2000px;
     /* Set a minimum height */
