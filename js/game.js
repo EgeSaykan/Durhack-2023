@@ -18,6 +18,11 @@ function updateRocket() {
   };
   rocketLeft += rocketVelocity;
   rocketVelocity *= 1 - friction;
+  if (rocketLeft < 0) {
+    rocketLeft = screen.width
+  } else if (rocketLeft > screen.width) {
+    rocketLeft = 0
+  }
   rotateRocket(rocketVelocity);
   updateRocketPosition();
   requestAnimationFrame(updateRocket);
