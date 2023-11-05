@@ -58,14 +58,14 @@
         return i;
       });
 
-      var meteorRight = randomFrom(bigRange);
-      var meteorTop = 0;
-      var meteor = document.createElement("div");
-      meteor.className = "meteors";
-      meteor.style.right = meteorRight + "%";
-      meteor.style.top = meteorTop + "%";
-      chosenDiv.appendChild(meteor);
-      meteors.push(meteor);
+        var meteorRight = randomFrom(bigRange);
+        var meteorTop = 0;
+        var meteor = document.createElement("div");
+        meteor.className = "meteors";
+        meteor.style.right = meteorRight + "%";
+        meteor.style.top = meteorTop + "%";
+        chosenDiv.appendChild(meteor);
+        meteors.push(meteor);
 
       // Remove meteors when there are more than maxMeteors on the screen
       if (meteors.length > maxMeteors) {
@@ -91,8 +91,10 @@
 
     // Initial generation of stars and meteors
     generateStars();
-    createMeteor();
-
+    if (currentPage == "page-2"){
+      createMeteor();
+    }
+    
     // Set an interval to clear and generate new stars every 15 seconds
     setInterval(function () {
       generateNewStars();
@@ -100,8 +102,11 @@
 
     // Set an interval to create meteors
     setInterval(function () {
-      createMeteor();
+      if (currentPage == "page-2"){
+        createMeteor();
+      }
     }, 1000);
+    
 
     // Set an interval to move meteors
     setInterval(function () {
@@ -113,4 +118,5 @@
 
   // Call the StarsAndMeteors function to populate the "stars-container" with stars and meteors
   StarsAndMeteors(300, 5, "stars-container"); // Adjust the number of stars and meteors as needed
+  StarsAndMeteors(300, 5, "stars-container-game"); // Adjust the number of stars and meteors as needed when the game is on
 })();
