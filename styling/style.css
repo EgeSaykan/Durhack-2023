@@ -5,8 +5,8 @@
   }
 
 #page-1 {
-    background-color: #bbd2f9;
     height: 100vh;
+    background-color: black;
 }
 .centered {
     position: absolute;
@@ -28,6 +28,10 @@
     margin: 0;
     text-shadow: 1px 1px 0px violet; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
 
+}
+
+body {
+    background-color: black;
 }
 
 #page-2 {
@@ -226,7 +230,7 @@ body::-webkit-scrollbar {
     }
 }
 
-#stars-container {
+#stars-container, #stars-container-game {
     position: absolute;
     top: 0;
     left: 0;
