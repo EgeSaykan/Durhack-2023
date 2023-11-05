@@ -42,8 +42,18 @@
 
     chosenDiv.style.display = "block";
 
+    // Function to generate new stars and replace the old ones
+    function regenerateStars() {
+      generateStars();
+    }
+
     // Initial generation of stars
     generateStars();
+
+    // Set an interval to regenerate stars every 15 seconds
+    setInterval(function () {
+      regenerateStars();
+    }, 15000);
   }
 
   // Call the Stars function to populate the "stars-container" with stars
