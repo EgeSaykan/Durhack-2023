@@ -34,9 +34,13 @@ function lockPage() {
 </head>
     <body onload="lockPage()">
         
-
+        <div id="background-container">
+            <!-- Your background content goes here -->
+        </div>
+        <div id="stars-container">
+            <!-- Stars will be generated here -->
+        </div>
         <div id="page-1" class="container-fluid">
-            <div id="stars-container"></div>
             
             <div class="row extend">
                 
@@ -102,16 +106,6 @@ function lockPage() {
                     <p style="color:rgb(201, 201, 255); 
                     line-height: 100px;">time flying: <label id="minutes">00</label>:<label id="seconds">00</label></p>
                 </div>
-                <div id="background-container">
-                    <!-- Your background content goes here -->
-                </div>
-                <div id="stars-container-game">
-                    <!-- Stars will be generated here -->
-                    <div id="meteors-container">
-                        <!-- Meteors will be appended here -->
-                    </div>
-                </div>
-
                 <div id="image-container">
                     <img id="rocket" src="images/rocket-ship.svg" alt="rocket-ship" />
                     <img id="flames-blur" src="images/flames-blur.svg" alt="Flames-blur Image" />
