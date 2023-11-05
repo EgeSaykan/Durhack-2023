@@ -82,12 +82,14 @@ function areMeteorsCollidingWithObject(meteors, object) {
   return false;
 }
 
-// Example usage:
+
 const meteors = Array.from(document.getElementsByClassName("meteors"));
 const ship = document.getElementById("rocket");
 
-if (areMeteorsCollidingWithObject(meteors, ship)) {
-  console.log("Meteor collided with the ship");
-} else {
-  console.log("No collision detected");
-}
+setInterval(function () {
+  if (areMeteorsCollidingWithObject(meteors, ship)) {
+    console.log("Meteor collided with the ship");
+  } else {
+    console.log("No collision detected");
+  }
+}, 100); // Check for collisions every 100 milliseconds (adjust the interval as needed)
