@@ -190,13 +190,13 @@ body::-webkit-scrollbar {
 }
 
 .center-text {
-    z-index: 10;
+    z-index: 999;
     font-size: larger;
     font-weight: bolder;
     color: wheat;
     text-align: center; /* Center the text horizontally */
     position: absolute;
-    top: 50%; /* Center the text vertically */
+    top: 10%; /* Center the text vertically */
     left: 50%; /* Center the text horizontally */
     transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
   }
