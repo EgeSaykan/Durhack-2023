@@ -58,3 +58,11 @@ window.addEventListener('keyup', (event) => {
 
 // Start the animation loop
 updateRocket();
+
+// Make instruction text fade out
+
+// Wait for 5 seconds (5000 milliseconds) and then start fading out the text
+setTimeout(function () {
+  var centerText = document.querySelector('.center-text');
+  centerText.style.opacity = 0;
+}, 5000);

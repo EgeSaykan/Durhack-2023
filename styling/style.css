@@ -189,6 +189,18 @@ body::-webkit-scrollbar {
     left: 85px;
 }
 
+.center-text {
+    z-index: 10;
+    font-size: larger;
+    font-weight: bolder;
+    color: wheat;
+    text-align: center; /* Center the text horizontally */
+    position: absolute;
+    top: 50%; /* Center the text vertically */
+    left: 50%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
+  }
+
 #flames-blur, #flames-blur-static {
     position: absolute;
     top: 100%;
