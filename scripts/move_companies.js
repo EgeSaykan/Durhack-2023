@@ -28,7 +28,7 @@ function move_companies(id, scale, time, i, second) {
   document.getElementById(id).style.marginTop = temp + "px";
   if (second){
     let temp_x = window.innerWidth * i / 10
-    if (temp > window.innerHeight - 155 && temp < window.innerHeight - 30 && rocketLeft + 15 < temp_x + 155 && rocketLeft + 15 > temp_x) {
+    if (temp > window.innerHeight - 255 && temp < window.innerHeight - 30 && rocketLeft < temp_x + 155 && rocketLeft + 15 > temp_x) {
       const meteorHref = document.getElementById(id).getAttribute("href");
       window.location.href = meteorHref;
     }
@@ -42,8 +42,8 @@ function move_companies(id, scale, time, i, second) {
 
 for (let i = 0; i < meteorArray.length; i++) {
   console.log(meteorArray[i])
-  setInterval(move_companies, 5, meteorArray[i][0], Math.random() * 45, meteorArray[i][1], i, false)
+  setInterval(move_companies, 5, meteorArray[i][0], Math.random() * 40 + 15, meteorArray[i][1], i, false)
 }
 for (let i = 0; i < meteorArray2.length; i++) {
-  setInterval(move_companies, 5, meteorArray2[i][0], Math.random() * 45, meteorArray2[i][1], i, true)
+  setInterval(move_companies, 5, meteorArray2[i][0], Math.random() * 40  + 15, meteorArray2[i][1], i, true)
 }
