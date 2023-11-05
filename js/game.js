@@ -11,28 +11,6 @@ function updateRocketPosition() {
   container.style.left = rocketLeft + 'px';
 }
 
-// Scoring
-let minutesLabel = document.getElementById("minutes");
-let secondsLabel = document.getElementById("seconds");
-let totalSeconds = 0;
-
-function setTime() {
-  ++totalSeconds;
-  secondsLabel.innerHTML = pad(totalSeconds % 60);
-  minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
-}
-
-function pad(val) {
-  var valString = val + "";
-
-  
-  if (valString.length < 2) {
-    return "0" + valString;
-  } else {
-    return valString;
-  }
-}
-
 // Function to update the rocket's velocity and position
 function updateRocket() {
   if (rocketVelocity > -20 & rocketVelocity < 20) {
@@ -40,6 +18,11 @@ function updateRocket() {
   };
   rocketLeft += rocketVelocity;
   rocketVelocity *= 1 - friction;
+  if (rocketLeft < 0) {
+    rocketLeft = screen.width
+  } else if (rocketLeft > screen.width) {
+    rocketLeft = 0
+  }
   rotateRocket(rocketVelocity);
   updateRocketPosition();
   requestAnimationFrame(updateRocket);
@@ -75,3 +58,38 @@ window.addEventListener('keyup', (event) => {
 
 // Start the animation loop
 updateRocket();
+
+//Collision logic
+
+function areMeteorsCollidingWithObject(meteors, object) {
+  const objectRect = object.getBoundingClientRect();
+
+  for (const meteor of meteors) {
+    const meteorRect = meteor.getBoundingClientRect();
+
+    if (
+      objectRect.left < meteorRect.right &&
+      objectRect.right > meteorRect.left &&
+      objectRect.top < meteorRect.bottom &&
+      objectRect.bottom > meteorRect.top
+    ) {
+      // Collision detected
+      return true;
+    }
+  }
+
+  // No collision detected
+  return false;
+}
+
+
+const meteors = Array.from(document.getElementsByClassName("meteors"));
+const ship = document.getElementById("rocket");
+
+setInterval(function () {
+  if (areMeteorsCollidingWithObject(meteors, ship)) {
+    console.log("Meteor collided with the ship");
+  } else {
+    console.log("No collision detected");
+  }
+}, 100); // Check for collisions every 100 milliseconds (adjust the interval as needed)
