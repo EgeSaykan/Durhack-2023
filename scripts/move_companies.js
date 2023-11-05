@@ -1,0 +1,46 @@
+
+let exante_time = [Date.now() - Math.random() * 20000];
+let myprotein_time = [Date.now() - Math.random() * 20000];
+let selfish = [Date.now() - Math.random() * 20000];
+let glossy = [Date.now() + Math.random() * 20000];
+let espa = [Date.now() - Math.random() * 20000];
+let lookfantastic = [Date.now() + Math.random() * 20000];
+let matalan = [Date.now() + Math.random() * 20000];
+let homebase = [Date.now() - Math.random() * 20000];
+let cola = [Date.now() - Math.random() * 20000];
+let hale = [Date.now() + Math.random() * 20000];
+let hut = [Date.now() - Math.random() * 20000];
+
+
+function move_companies(id, scale, time){
+  
+  document.getElementById(id).style.marginTop = ((Date.now() - time[0]) / scale) + "px";
+  a = document.getElementById(id).style.marginTop;
+  if (parseInt(a.slice(0, a.length - 2)) >= window.innerHeight) {
+    time[0] = Date.now() + Math.random() * 20000
+  }
+
+
+}
+
+setInterval(move_companies, 5, "exante", 25, exante_time)
+setInterval(move_companies, 5, "myprotein", 70, myprotein_time)
+setInterval(move_companies, 5, "selfish", 15, selfish)
+setInterval(move_companies, 5, "glossy-box", 35, glossy)
+setInterval(move_companies, 5, "espa", 45, espa)
+setInterval(move_companies, 5, "lookfantastic", 22, lookfantastic)
+setInterval(move_companies, 5, "matalan", 30, matalan)
+setInterval(move_companies, 5, "homebase", 25, homebase)
+setInterval(move_companies, 5, "cola", 35, cola)
+setInterval(move_companies, 5, "hale", 20, hale)
+setInterval(move_companies, 5, "hut", 40, hut)
+setInterval(move_companies, 5, "exante-page-2", 25, exante_time)
+setInterval(move_companies, 5, "selfish-page-2", 15, selfish)
+setInterval(move_companies, 5, "glossy-box-page-2", 35, glossy)
+setInterval(move_companies, 5, "espa-page-2", 45, espa)
+setInterval(move_companies, 5, "lookfantastic-page-2", 22, lookfantastic)
+setInterval(move_companies, 5, "matalan-page-2", 30, matalan)
+setInterval(move_companies, 5, "homebase-page-2", 25, homebase)
+setInterval(move_companies, 5, "cola-page-2", 35, cola)
+setInterval(move_companies, 5, "hale-page-2", 20, hale)
+setInterval(move_companies, 5, "hut-page-2", 40, hut)
