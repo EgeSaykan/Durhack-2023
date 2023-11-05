@@ -1,0 +1,274 @@
+@charset "UTF-8";
+
+.no-scroll {
+    overflow: hidden;
+  }
+
+#page-1 {
+    height: 100vh;
+    background-color: black;
+}
+.centered {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 70px;
+    margin: 50px;
+    text-align: center;
+    
+  }
+
+.start{
+    color:purple;
+    font-weight: bold;
+    position: realtive;
+    padding: 1em 0;
+    margin: 0;
+    text-shadow: 1px 1px 0px violet; /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+
+}
+
+body {
+    background-color: black;
+}
+
+#page-2 {
+    background-color: black;
+    display: none;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar-height {
+    height: 55px;
+}
+
+.extend {
+    height: calc(100vh - 55px);
+}
+
+.montserrat {
+    font-family: Montserrat;
+}
+
+#rocket-ship {
+    margin-top: 25vh;
+    width: 15vw;
+}
+
+.companies {
+    position: relative;
+}
+
+#exante {
+  margin-left: 5vw;
+}
+
+#myprotein {
+    margin-left: 0vw;
+}
+
+#selfish {
+    margin-left: 19vw;
+}
+
+#glossy-box {
+    margin-left: 1vw;
+}
+
+#espa {
+    margin-left: 15vw;
+}
+
+#lookfantastic {
+    margin-left: 17vw;
+}
+
+#matalan {
+    margin-left: 12vw;
+}
+
+#homebase {
+    margin-left: 0vw;
+}
+
+#cola {
+    margin-left: 15vw;
+}
+
+#hale {
+    margin-left: 25vw;
+}
+
+#hut {
+    margin-left: 30vw;
+}
+
+#exante-page-2 {
+  margin-left: 0vw;
+}
+
+#selfish-page-2 {
+    margin-left: 20vw;
+}
+
+#glossy-box-page-2 {
+    margin-left: 30vw;
+}
+
+#espa-page-2 {
+    margin-left: 40vw;
+}
+
+#lookfantastic-page-2 {
+    margin-left: 100vw;
+}
+
+#matalan-page-2 {
+    margin-left: 10vw;
+}
+
+#homebase-page-2 {
+    margin-left: 80vw;
+}
+
+#cola-page-2 {
+    margin-left: 70vw;
+}
+
+#hale-page-2 {
+    margin-left: 60vw;
+}
+
+#hut-page-2 {
+    margin-left: 50vw;
+}
+
+#content-container {
+    min-height: 2000px;
+    /* Set a minimum height */
+}
+
+#image-container, #image-container-static {
+    position: absolute;
+    bottom: 10%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+#image-box-static{
+    z-index: 12;
+    position: absolute;
+    bottom: 10%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+
+}
+
+#rocket, #rocket-static {
+    position: relative;
+}
+
+#flames, #flames-static {
+    position: absolute;
+    top: 100%;
+    /* Place flames below the rocket */
+   
+}
+#flames-blur-static{
+    left: 55px;
+    /* Adjust left position as needed */
+}
+#flames-static{
+        /* Place flames below the rocket */
+    left: 85px;
+}
+
+.center-text {
+    z-index: 10;
+    font-size: larger;
+    font-weight: bolder;
+    color: wheat;
+    text-align: center; /* Center the text horizontally */
+    position: absolute;
+    top: 50%; /* Center the text vertically */
+    left: 50%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
+  }
+
+#flames-blur, #flames-blur-static {
+    position: absolute;
+    top: 100%;
+    /* Adjust left position as needed */
+}
+
+#rocket{
+    width: 50px; /* Set the desired width for the rocket */
+    height: 50px; /* Set the desired height for the rocket */
+}
+
+#flames{
+    left: 10px;
+    width: 30px; /* Set the desired width for the rocket */
+    height: 30px; /* Set the desired height for the rocket */
+}
+
+#flames-blur{
+    left: 10px;
+    width: 30px; /* Set the desired width for the rocket */
+    height: 30px; /* Set the desired height for the rocket */
+}
+
+body::-webkit-scrollbar {
+    z-index: 18;
+    border-radius: 100%;
+}
+
+/* Stars CSS */
+.stars {
+    position: absolute;
+    background: #f1f1f1;
+    z-index: 1;
+    border-radius: 100%;
+    /* Add twinkling animation for stars and set iteration count to infinite */
+    animation: twinkling 5s infinite, moveDown 20s linear 1; /* Adjust the duration and timing as needed */
+}
+
+@keyframes twinkling {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(10000%); /* Extend the movement path by increasing the percentage */
+    }
+    100% {
+        transform: translateY(0); /* Reset stars to the top */
+    }
+}
+
+#stars-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: transparent;
+}
